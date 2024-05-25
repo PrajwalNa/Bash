@@ -48,9 +48,9 @@ fi
 # looking for the target's status, and storing the value in the file check
 who -T | egrep "$target\s+\+" -c > check
 
-# asking user to input output shown by command
+# reading output from the command
 read -u 3 n
-echo $n
+echo "users: $n"
 
 # checking the Target's status
 if [[ $n -ge 1 ]]
